@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim BuBaDiBaKo: Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Link Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <!--End Link Fonts-->
+  </head>
+  <body>
+    <h1 id="title">Tim BuBaDiBaKo Survey Form</h1>
+    <p id="description">Please fill the survey form about Tim BuBaDiBaKo below, Thank you!</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+      <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label>
+      <label for="number" id="number-label">
+        Age
+        <input type="number" id="number" placeholder="Your age" min="12" max="18" required />
+      </label>
+      <label for="dropdown" id="dropdown-label">
+        What cartoon do you like the most?
+        <select id="dropdown">
+          <option>Boboiboy</option>
+          <option>Gumball</option>
+          <option>Ben 10</option>
+          <option>Upin & Ipin</option>
+        </select>
+      </label>
+      <label id="radio-label"> What is your favorite character in Tim BuBaDiBaKo? </label>
+      <div class="Boboiboy">
+        <input type="radio" id="Boboiboy" name="radio" value="Boboiboy" />
+        <label for="Boboiboy" id="Boboiboy" class="radio">Boboiboy</label>
+      </div>
+      <div class="gopal">
+        <input type="radio" id="Gopal" name="radio" value="Gopal" />
+        <label for="Gopal" id="Gopal" class="radio">Gopal</label>
+      </div>
+      <div class="Adudu">
+        <input type="radio" id="Adudu" name="radio" value="Adudu" />
+        <label for="Adudu" id="Adudu" class="radio">Adudu</label>
+      </div>
+      <label for="scene" id="scene"> What scene did you like in Tim BuBaDiBaKo arc? </label>
+      <div class="scene-1">
+        <input type="checkbox" id="s1" value="s1" />
+        <label for="s1" id="s1">Boboiboy helps Adudu</label>
+      </div>
+      <div class="scene-2">
+        <input type="checkbox" id="s2" value="s2" />
+        <label for="s2" id="s2">Gopal VS Fang</label>
+      </div>
+      <div class="scene-3">
+        <input type="checkbox" id="s3" value="s3" />
+        <label for="s3" id="s3">Tim BuBaDiBaKo got so many koko</label>
+      </div>
+      <div class="scene-4">
+        <input type="checkbox" id="s4" value="s4" />
+        <label for="s4" id="s4">Adudu saved Probe</label>
+      </div>
+      <label for="comment" id="comment">What do you think about Tim BuBaDiBaKo?</label>
+      <textarea name="" id="" rows="7" placeholder="Please enter your comment here..."></textarea>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

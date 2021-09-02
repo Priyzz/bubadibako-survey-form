@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(77, 175, 242, 0.8) 0%, rgba(95, 173, 249, 0.8) 100%), url(image/tim-bubadibako.jpg);
+  z-index: -1;
+  background-size: cover;
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+}
+
+#title {
+  font-family: 'Poppins', sans-serif;
+}
+
+#description {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+p {
+  text-align: center;
+  color: white;
+}
+
+form {
+  max-width: 600px;
+  background: rgba(46, 42, 99, 0.7);
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: white;
+  border-radius: 8px;
+}
+
+label,
+input {
+  display: block;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select {
+  margin-top: 7px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: inherit;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+div {
+  display: block;
+}
+
+#Boboiboy,
+#Gopal,
+#Adudu,
+#s1,
+#s2,
+#s3,
+#s4 {
+  display: inline-block;
+}
+
+div #Adudu {
+  margin-bottom: 20px;
+}
+
+#radio-label,
+.radio {
+  margin-bottom: 10px;
+}
+
+.scene-2,
+.scene-3,
+.scene-4 {
+  margin-top: -10px;
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  padding: 10px;
+}
+
+button {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 182, 38);
+  color: white;
+  font-family: arial;
+  font-size: 18px;
+  border-radius: 5px;
+}
